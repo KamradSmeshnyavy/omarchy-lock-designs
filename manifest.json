@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "kamradsmeshnyavy.lock",
-  "name": "My Lock Screen",
+  "name": "Lock Designs",
   "version": "1.0.0",
-  "author": "Omarchy",
-  "description": "Quickshell session lock with separate password and fingerprint PAM flows.",
+  "author": "KamradSmeshnyavy",
+  "description": "Omarchy lock screen with 21 designs on top of the stock PAM flow, with a safe fallback to the stock view",
   "omarchy": {
     "capabilities": [
       "authentication"
@@ -17,5 +17,6 @@
   "keepLoaded": true,
   "entryPoints": {
     "service": "Service.qml"
-  }
+  },
+  "homepage": "https://github.com/KamradSmeshnyavy/omarchy-lock-designs"
 }
