@@ -58,7 +58,7 @@ DesignBase {
       fieldHeight: 48
       textAlignment: TextInput.AlignLeft
       fontFamily: "serif"
-      placeholderText: "пароль"
+      placeholderText: root.tr("password")
       Rectangle {
         anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
         height: 2

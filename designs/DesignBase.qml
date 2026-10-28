@@ -1,5 +1,6 @@
 import QtQuick
 import Quickshell
+import Quickshell.Io
 import qs.Commons
 import qs.Commons as Commons
 
@@ -47,8 +48,44 @@ Item {
   readonly property real wallpaperDim: Number(opt("wallpaperDim", 0))
   readonly property bool reduceMotion: opt("reduceMotion", false) === true
   readonly property string userName: Quickshell.env("USER") || ""
-  readonly property string greeting: String(opt("ownerMessage", "")) || ("Привет, " + userName)
+  readonly property string greeting: String(opt("ownerMessage", "")) || root.tr("Hello, %1").arg(userName)
   readonly property string avatarPath: String(opt("avatar", "")) || (Quickshell.env("HOME") + "/.face")
+
+  // ── Язык ─────────────────────────────────────────────────────────────
+  // "lang" в lock-design.json, иначе общий ~/.config/omarchy/customizer.json (тот же, что у
+  // Customizer), иначе $LC_ALL / $LC_MESSAGES / $LANG: ru* — русский, остальное — английский.
+  // Строки в дизайнах — английские, root.tr() переводит их.
+  property string sharedLang: ""
+  FileView {
+    path: Quickshell.env("HOME") + "/.config/omarchy/customizer.json"
+    printErrors: false
+    onLoaded: {
+      try { root.sharedLang = String(JSON.parse(text()).lang || "") } catch (e) { root.sharedLang = "" }
+    }
+    onLoadFailed: root.sharedLang = ""
+  }
+  readonly property string lang: {
+    var l = String(opt("lang", "")) || root.sharedLang
+      || Quickshell.env("LC_ALL") || Quickshell.env("LC_MESSAGES") || Quickshell.env("LANG") || "en"
+    return /^ru/.test(l) ? "ru" : "en"
+  }
+  readonly property var strings: ({
+    ru: {
+      "Hello, %1": "Привет, %1",
+      "password": "пароль",
+      "[ enter password ]": "[ введите пароль ]",
+      "just type": "просто печатайте",
+      "Untitled": "Без названия",
+      "Nothing playing": "Ничего не играет",
+      "%1d ": "%1д ", "%1h ": "%1ч ", "%1m": "%1м",
+      "Uptime": "Аптайм", "Memory": "Память", "Load": "Нагрузка", "Battery": "Батарея",
+      "GB": "ГБ", "none": "нет"
+    }
+  })
+  function tr(s) {
+    var t = strings[root.lang]
+    return t && t[s] !== undefined ? t[s] : s
+  }
 
   // ── Палитра темы ─────────────────────────────────────────────────────
   readonly property color bg: Commons.Color.background

@@ -37,7 +37,7 @@ DesignBase {
 
   function uptimeText(s) {
     var d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600), m = Math.floor(s % 3600 / 60)
-    return (d > 0 ? d + "д " : "") + h + "ч " + m + "м"
+    return (d > 0 ? root.tr("%1d ").arg(d) : "") + root.tr("%1h ").arg(h) + root.tr("%1m").arg(m)
   }
 
   Wallpaper { anchors.fill: parent; host: root; dim: Math.max(root.wallpaperDim, 0.3) }
@@ -71,11 +71,11 @@ DesignBase {
 
         Repeater {
           model: [
-            { icon: "󰔟", label: "Аптайм", value: root.uptimeText(root.uptime), part: -1 },
-            { icon: "󰍛", label: "Память", value: root.memTotal > 0 ? ((root.memTotal - root.memAvail) / 1048576).toFixed(1) + " / " + (root.memTotal / 1048576).toFixed(1) + " ГБ" : "—",
+            { icon: "󰔟", label: root.tr("Uptime"), value: root.uptimeText(root.uptime), part: -1 },
+            { icon: "󰍛", label: root.tr("Memory"), value: root.memTotal > 0 ? ((root.memTotal - root.memAvail) / 1048576).toFixed(1) + " / " + (root.memTotal / 1048576).toFixed(1) + " " + root.tr("GB") : "—",
               part: root.memTotal > 0 ? (root.memTotal - root.memAvail) / root.memTotal : -1 },
-            { icon: "󰓅", label: "Нагрузка", value: root.load || "—", part: -1 },
-            { icon: root.batteryStatus === "Charging" ? "󰂄" : "󰁹", label: "Батарея", value: root.battery >= 0 ? root.battery + "%  " + root.batteryStatus : "нет",
+            { icon: "󰓅", label: root.tr("Load"), value: root.load || "—", part: -1 },
+            { icon: root.batteryStatus === "Charging" ? "󰂄" : "󰁹", label: root.tr("Battery"), value: root.battery >= 0 ? root.battery + "%  " + root.batteryStatus : root.tr("none"),
               part: root.battery >= 0 ? root.battery / 100 : -1 }
           ]
           delegate: Column {

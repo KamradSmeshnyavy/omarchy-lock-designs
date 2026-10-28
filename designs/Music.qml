@@ -67,7 +67,7 @@ DesignBase {
         Text {
           width: parent.width
           elide: Text.ElideRight
-          text: root.player ? (root.player.trackTitle || "Без названия") : "Ничего не играет"
+          text: root.player ? (root.player.trackTitle || root.tr("Untitled")) : root.tr("Nothing playing")
           color: root.fg
           font.family: root.font
           font.pixelSize: 18

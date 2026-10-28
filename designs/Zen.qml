@@ -25,7 +25,7 @@ DesignBase {
     anchors.centerIn: parent
     bare: true
     fieldWidth: 600
-    placeholderText: "просто печатайте"
+    placeholderText: root.tr("just type")
     placeholderColor: root.withAlpha(root.fg, 0.35)
     dotFontSize: 30
   }

@@ -53,7 +53,8 @@ omarchy-shell lock previewDesign flip
 | `wallpaperBlur` | `1` | размытие обоев 0–1 |
 | `wallpaperDim` | `0` | затемнение обоев 0–0.9 |
 | `reduceMotion` | `false` | без анимаций (aurora, rain, секундная стрелка) |
-| `ownerMessage` | `Привет, $USER` | приветствие |
+| `ownerMessage` | `Привет, $USER` | приветствие (по-английски — `Hello, $USER`) |
+| `lang` | — | `en` / `ru`; иначе `lang` из `~/.config/omarchy/customizer.json`, затем `$LANG` |
 | `avatar` | `~/.face` | картинка аватара; нет — первая буква имени |
 
 ## Свой дизайн
@@ -73,7 +74,7 @@ DesignBase {
 }
 ```
 
-В `DesignBase` есть `time`, `hours`, `minutes`, `dateText`, `now`, `greeting`, `userName`, цвета
+В `DesignBase` есть `time`, `hours`, `minutes`, `dateText`, `now`, `greeting`, `userName`, `lang`, `tr()`, цвета
 `bg fg accent muted`, `font`, `withAlpha()`, `opt(key, def)` и флаг `preview`. Проверка:
 `omarchy-shell lock previewDesign my:Mine.qml`.
 

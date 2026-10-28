@@ -55,7 +55,8 @@ The file is watched and applied immediately.
 | `wallpaperBlur` | `1` | wallpaper blur, 0–1 |
 | `wallpaperDim` | `0` | wallpaper dim, 0–0.9 |
 | `reduceMotion` | `false` | no animations (aurora, rain, the second hand) |
-| `ownerMessage` | `Привет, $USER` | greeting |
+| `ownerMessage` | `Hello, $USER` | greeting (Russian: `Привет, $USER`) |
+| `lang` | — | `en` / `ru`; otherwise `lang` from `~/.config/omarchy/customizer.json`, then `$LANG` |
 | `avatar` | `~/.face` | avatar image; without one, the first letter of the user name |
 
 ## Your own design
@@ -75,7 +76,7 @@ DesignBase {
 }
 ```
 
-`DesignBase` provides `time`, `hours`, `minutes`, `dateText`, `now`, `greeting`, `userName`, the colours
+`DesignBase` provides `time`, `hours`, `minutes`, `dateText`, `now`, `greeting`, `userName`, `lang`, `tr()`, the colours
 `bg fg accent muted`, `font`, `withAlpha()`, `opt(key, def)` and a `preview` flag. Test it with
 `omarchy-shell lock previewDesign my:Mine.qml`.
 
