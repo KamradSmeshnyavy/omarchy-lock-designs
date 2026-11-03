@@ -2,13 +2,15 @@
 
 [🇬🇧 English](README.md)
 
-21 дизайн экрана блокировки [Omarchy](https://omarchy.org). Аутентификация не тронута: пароль, PAM и
+22 дизайна экрана блокировки [Omarchy](https://omarchy.org). Аутентификация не тронута: пароль, PAM и
 отпечаток — стоковый сервис `omarchy.lock`, заменён только вид.
 
 ![Дизайны](screenshots/designs.webp)
 
 classic (сток), zen, dock, island, split, sheet, card, cinema, poster, editorial, analog, flip, ring,
-calendar, terminal, neon, system, music, aurora, rain, constellation. Цвета и шрифт — из текущей темы.
+calendar, terminal, neon, system, music, aurora, rain, constellation, nihil. Цвета и шрифт — из текущей темы
+(`nihil` использует фирменную чёрную рамку `#000000`, матричные часы `Doto` Bold, подписи `Space Mono`,
+круглые LED-точки пароля и красный `#d71921` только при ошибке входа).
 
 ## Установка
 

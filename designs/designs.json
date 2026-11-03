@@ -19,5 +19,6 @@
   {"id": "music", "file": "Music.qml", "name": "Music", "description": "Now playing (MPRIS) with buttons", "description_ru": "Что играет сейчас (MPRIS) с кнопками", "tags": ["info"]},
   {"id": "aurora", "file": "Aurora.qml", "name": "Aurora", "description": "Drifting aurora in the theme's colours", "description_ru": "Плывущее сияние цветов темы", "tags": ["motion"]},
   {"id": "rain", "file": "Rain.qml", "name": "Rain", "description": "Digital rain", "description_ru": "Цифровой дождь", "tags": ["motion"]},
-  {"id": "constellation", "file": "Constellation.qml", "name": "Constellation", "description": "Every password character lights up a star", "description_ru": "Каждый символ пароля зажигает звезду", "tags": ["motion", "fun"]}
+  {"id": "constellation", "file": "Constellation.qml", "name": "Constellation", "description": "Every password character lights up a star", "description_ru": "Каждый символ пароля зажигает звезду", "tags": ["motion", "fun"]},
+  {"id": "nihil", "file": "Nihil.qml", "name": "Nihil", "description": "Dot-matrix Doto clock, black bezel, circular LED password pill and ex nihilo motto", "description_ru": "Матричные часы Doto, чёрная рамка, капсула пароля с LED-точками и девиз ex nihilo", "tags": ["minimal", "clock"]}
 ]

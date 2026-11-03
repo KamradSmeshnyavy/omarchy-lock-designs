@@ -1,0 +1,10 @@
+Third-party attributions for kamradsmeshnyavy.lock:
+
+- Base lock service implementation (`omarchy.lock`):
+  Copyright (c) David Heinemeier Hansson / Basecamp (Omarchy, https://github.com/basecamp/omarchy)
+  Licensed under the MIT License.
+
+- NIHIL lock screen design (`designs/Nihil.qml`, `nihil` entry in `designs/designs.json`):
+  Adapted from Nihil-Shell (`home/hyprlock.nix`, https://github.com/poligle/Nihil-Shell)
+  Copyright (c) 2026 Pol Iglesias
+  Licensed under the MIT License.

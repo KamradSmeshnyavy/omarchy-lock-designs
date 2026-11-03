@@ -2,14 +2,15 @@
 
 [🇷🇺 Русский](README.ru.md)
 
-21 designs for the [Omarchy](https://omarchy.org) lock screen. Authentication is untouched: password,
+22 designs for the [Omarchy](https://omarchy.org) lock screen. Authentication is untouched: password,
 PAM and fingerprint are the stock `omarchy.lock` service — only the view is swapped.
 
 ![Designs](screenshots/designs.webp)
 
 classic (stock), zen, dock, island, split, sheet, card, cinema, poster, editorial, analog, flip, ring,
-calendar, terminal, neon, system, music, aurora, rain, constellation. All of them take their colours and
-font from the active Omarchy theme.
+calendar, terminal, neon, system, music, aurora, rain, constellation, nihil. All of them take their colours and
+font from the active Omarchy theme (`nihil` uses its signature pure `#000000` bezel, `Doto` Bold LED clock,
+`Space Mono` uppercase labels, circular LED password dots and `#d71921` failure state).
 
 ## Install
 
