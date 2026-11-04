@@ -104,6 +104,12 @@ Customizer, превью рендерятся в цветах текущей т�
 curl -fsSL https://raw.githubusercontent.com/KamradSmeshnyavy/omarchy-customizer/main/install.sh | bash
 ```
 
+## Дизайны стилей
+
+`style-flat`, `style-glass`, `style-fluent`, `style-paper`, `style-neumorph`, `style-brutal`, `style-retro`, `style-neon` —
+раскладка Nihil (крупные часы, дата, поле пароля с точками, подсказка отпечатка, девиз) в отделке стиля Customizer:
+один `designs/StyleLock.qml` с `look` и маленькие обёртки `designs/Style<Look>.qml`. Цвета — из темы.
+
 ## Лицензия
 
 MIT. Основано на `omarchy.lock` из [Omarchy](https://github.com/basecamp/omarchy) (MIT, © David Heinemeier

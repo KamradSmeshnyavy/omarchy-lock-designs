@@ -1,0 +1,3 @@
+StyleLock {
+  look: "glass"
+}

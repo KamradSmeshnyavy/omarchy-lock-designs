@@ -105,6 +105,12 @@ One command installs it and offers this plugin and the others:
 curl -fsSL https://raw.githubusercontent.com/KamradSmeshnyavy/omarchy-customizer/main/install.sh | bash
 ```
 
+## Style designs
+
+`style-flat`, `style-glass`, `style-fluent`, `style-paper`, `style-neumorph`, `style-brutal`, `style-retro`, `style-neon` —
+the Nihil layout (big clock, date, password field with dots, fingerprint hint, motto) in the finish of a Customizer
+style: one `designs/StyleLock.qml` with `look`, tiny wrappers `designs/Style<Look>.qml`. Colours come from the theme.
+
 ## License
 
 MIT. Based on `omarchy.lock` from [Omarchy](https://github.com/basecamp/omarchy) (MIT, © David Heinemeier
