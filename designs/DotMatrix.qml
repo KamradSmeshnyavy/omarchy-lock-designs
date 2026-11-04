@@ -1,25 +1,25 @@
 import QtQuick
 import QtQuick.Shapes
-import "../nihil" as Nihil
+import "../dotmatrix" as DotMatrix
 
-// NIHIL: матричные обои без блюра, аппаратная рамка с внутренним контуром 1px,
+// DOT-MATRIX: матричные обои без блюра, аппаратная рамка с внутренним контуром 1px,
 // часы Doto Bold 128px, дата Space Mono, капсула пароля с круглыми LED-точками
 // (красный появляется только при ошибке входа) и девиз ex nihilo внизу.
-// Цвета и шрифты — nihil/Palette.qml: тема omarchy или оригинальный монохром (nihil.json).
+// Цвета и шрифты — dotmatrix/Palette.qml: тема omarchy или оригинальный монохром (dotmatrix.json).
 DesignBase {
   id: root
   field: pw
 
-  readonly property color cVoid: Nihil.Palette.bg
-  readonly property color cOff: Nihil.Palette.unlit
-  readonly property color cLine: Nihil.Palette.line
-  readonly property color cMuted: Nihil.Palette.muted
-  readonly property color cDim: Nihil.Palette.dim
-  readonly property color cInk: Nihil.Palette.fg
-  readonly property color cSignal: Nihil.Palette.danger
+  readonly property color cVoid: DotMatrix.Palette.bg
+  readonly property color cOff: DotMatrix.Palette.unlit
+  readonly property color cLine: DotMatrix.Palette.line
+  readonly property color cMuted: DotMatrix.Palette.muted
+  readonly property color cDim: DotMatrix.Palette.dim
+  readonly property color cInk: DotMatrix.Palette.fg
+  readonly property color cSignal: DotMatrix.Palette.danger
 
-  readonly property string fontDot: Nihil.Palette.fontDot
-  readonly property string fontMono: Nihil.Palette.fontMono
+  readonly property string fontDot: DotMatrix.Palette.fontDot
+  readonly property string fontMono: DotMatrix.Palette.fontMono
 
   readonly property int bezelWidth: 8
   readonly property int bezelRadius: 20

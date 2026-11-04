@@ -8,8 +8,8 @@ PAM and fingerprint are the stock `omarchy.lock` service — only the view is sw
 ![Designs](screenshots/designs.webp)
 
 classic (stock), zen, dock, island, split, sheet, card, cinema, poster, editorial, analog, flip, ring,
-calendar, terminal, neon, system, music, aurora, rain, constellation, nihil. All of them take their colours and
-font from the active Omarchy theme (`nihil` uses its signature pure `#000000` bezel, `Doto` Bold LED clock,
+calendar, terminal, neon, system, music, aurora, rain, constellation, dotmatrix. All of them take their colours and
+font from the active Omarchy theme (`dotmatrix` uses its signature pure `#000000` bezel, `Doto` Bold LED clock,
 `Space Mono` uppercase labels, circular LED password dots and `#d71921` failure state).
 
 ## Install
@@ -108,7 +108,7 @@ curl -fsSL https://raw.githubusercontent.com/KamradSmeshnyavy/omarchy-customizer
 ## Style designs
 
 `style-flat`, `style-glass`, `style-fluent`, `style-paper`, `style-neumorph`, `style-brutal`, `style-retro`, `style-neon` —
-the Nihil layout (big clock, date, password field with dots, fingerprint hint, motto) in the finish of a Customizer
+the DOT-MATRIX layout (big clock, date, password field with dots, fingerprint hint, motto) in the finish of a Customizer
 style: one `designs/StyleLock.qml` with `look`, tiny wrappers `designs/Style<Look>.qml`. Colours come from the theme.
 
 ## License

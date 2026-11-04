@@ -8,8 +8,8 @@
 ![Дизайны](screenshots/designs.webp)
 
 classic (сток), zen, dock, island, split, sheet, card, cinema, poster, editorial, analog, flip, ring,
-calendar, terminal, neon, system, music, aurora, rain, constellation, nihil. Цвета и шрифт — из текущей темы
-(`nihil` использует фирменную чёрную рамку `#000000`, матричные часы `Doto` Bold, подписи `Space Mono`,
+calendar, terminal, neon, system, music, aurora, rain, constellation, dotmatrix. Цвета и шрифт — из текущей темы
+(`dotmatrix` использует фирменную чёрную рамку `#000000`, матричные часы `Doto` Bold, подписи `Space Mono`,
 круглые LED-точки пароля и красный `#d71921` только при ошибке входа).
 
 ## Установка
@@ -107,7 +107,7 @@ curl -fsSL https://raw.githubusercontent.com/KamradSmeshnyavy/omarchy-customizer
 ## Дизайны стилей
 
 `style-flat`, `style-glass`, `style-fluent`, `style-paper`, `style-neumorph`, `style-brutal`, `style-retro`, `style-neon` —
-раскладка Nihil (крупные часы, дата, поле пароля с точками, подсказка отпечатка, девиз) в отделке стиля Customizer:
+раскладка DOT-MATRIX (крупные часы, дата, поле пароля с точками, подсказка отпечатка, девиз) в отделке стиля Customizer:
 один `designs/StyleLock.qml` с `look` и маленькие обёртки `designs/Style<Look>.qml`. Цвета — из темы.
 
 ## Лицензия
