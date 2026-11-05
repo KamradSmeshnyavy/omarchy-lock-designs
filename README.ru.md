@@ -28,7 +28,23 @@ omarchy-shell lock previewDesign flip
 
 Вернуть стоковый экран: `omarchy plugin enable omarchy.lock`.
 
-Проверено на Omarchy 4.0.6 и Quickshell 0.3.2.
+
+## Требования
+
+Omarchy 4 (Quattro) с его оболочкой. Проверено на Omarchy 4.0.6 и Quickshell 0.3.2.
+
+- Аутентификация — стоковый PAM Omarchy, ставить ничего не нужно.
+- Дизайны DOT-MATRIX используют шрифты из [Customizer](https://github.com/KamradSmeshnyavy/omarchy-customizer) (Doto, Space Grotesk, Space Mono); без них — шрифт Omarchy.
+
+## Удаление
+
+```sh
+omarchy plugin enable omarchy.lock      # сначала вернуть стоковый
+omarchy plugin remove kamradsmeshnyavy.lock
+omarchy restart shell
+```
+
+Настройки остаются в `~/.config/omarchy/lock-design.json` — удалите их вручную, если не нужны.
 
 ## Безопасность
 

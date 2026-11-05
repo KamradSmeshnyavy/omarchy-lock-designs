@@ -4,6 +4,7 @@
   "name": "Lock Designs",
   "version": "1.0.0",
   "author": "KamradSmeshnyavy",
+  "license": "MIT",
   "description": "Omarchy lock screen with 22 designs on top of the stock PAM flow, with a safe fallback to the stock view",
   "omarchy": {
     "capabilities": [
