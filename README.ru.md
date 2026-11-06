@@ -7,6 +7,8 @@
 
 ![Дизайны](screenshots/designs.webp)
 
+<!-- Demo video: repo-videos/omarchy-lock-designs.mp4 — drag it here when editing this file on GitHub -->
+
 classic (сток), zen, dock, island, split, sheet, card, cinema, poster, editorial, analog, flip, ring,
 calendar, terminal, neon, system, music, aurora, rain, constellation, dotmatrix. Цвета и шрифт — из текущей темы
 (`dotmatrix` использует фирменную чёрную рамку `#000000`, матричные часы `Doto` Bold, подписи `Space Mono`,

@@ -7,6 +7,8 @@ PAM and fingerprint are the stock `omarchy.lock` service — only the view is sw
 
 ![Designs](screenshots/designs.webp)
 
+<!-- Demo video: repo-videos/omarchy-lock-designs.mp4 — drag it here when editing this file on GitHub -->
+
 classic (stock), zen, dock, island, split, sheet, card, cinema, poster, editorial, analog, flip, ring,
 calendar, terminal, neon, system, music, aurora, rain, constellation, dotmatrix. All of them take their colours and
 font from the active Omarchy theme (`dotmatrix` uses its signature pure `#000000` bezel, `Doto` Bold LED clock,
