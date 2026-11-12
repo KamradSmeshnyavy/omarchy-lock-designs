@@ -111,7 +111,7 @@ whose input is broken and shows the stock password field.
 The themes of [qylock](https://github.com/Darkkal44/qylock) (GPL-3.0; game art and video backgrounds) are not part of
 this repo: `omarchy-lock-themes` (in the dotfiles, `scripts/bin`) downloads them to `~/.local/share/omarchy-lock-themes`
 with a sparse clone and points their Qt5 imports at qylock's own shims. `list [--remote]`, `fetch <theme>… | --all`,
-`set <theme>`, `preview <theme>`, `update`. In the Customizer: **Lock** → SDDM themes (download one or all, previews,
+`set <theme>`, `preview <theme>`, `update`; `sddm <theme>` puts the same theme on the SDDM login screen (sudo, the original files — SDDM has its own `SddmComponents` and cannot read your home), `sddm-test <theme>` shows it in the real greeter in a window, `sddm reset` brings the Omarchy login back. In the Customizer: **Lock** → SDDM themes (download one or all, previews,
 pick).
 
 ## Files

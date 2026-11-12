@@ -109,7 +109,9 @@ DesignBase {
 Темы [qylock](https://github.com/Darkkal44/qylock) (GPL-3.0; арт из игр и видеофоны) в этот репозиторий не входят:
 `omarchy-lock-themes` (в dotfiles, `scripts/bin`) скачивает их в `~/.local/share/omarchy-lock-themes` (sparse-клон) и
 переписывает импорты Qt5 на шимы самого qylock. `list [--remote]`, `fetch <тема>… | --all`, `set <тема>`,
-`preview <тема>`, `update`. В Customizer: **Lock** → SDDM-темы (скачать одну или все, превью, выбор).
+`preview <тема>`, `update`; `sddm <тема>` ставит ту же тему на экран входа SDDM (sudo, оригинальные файлы — у SDDM свои
+`SddmComponents`, а домашний каталог ему не виден), `sddm-test <тема>` показывает её в настоящем greeter'е в окне,
+`sddm reset` возвращает вход Omarchy. В Customizer: **Lock** → SDDM-темы (скачать одну или все, превью, выбор).
 
 ## Файлы
 
