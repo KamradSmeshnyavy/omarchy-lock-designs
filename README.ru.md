@@ -98,6 +98,19 @@ DesignBase {
 `bg fg accent muted`, `font`, `withAlpha()`, `opt(key, def)` и флаг `preview`. Проверка:
 `omarchy-shell lock previewDesign my:Mine.qml`.
 
+## SDDM-темы (qylock)
+
+Экраном блокировки может быть любая SDDM-тема на QML: дизайн `sddm:<тема>` загружает `designs/SddmHost.qml`, а он даёт
+теме то же, что SDDM, — `sddm` (вход, питание, `loginFailed` / `loginSucceeded`), `config` (из `theme.conf`, с
+`stringValue` / `boolValue` / `intValue`), `userModel`, `sessionModel`, `keyboard`. `sddm.login()` только передаёт пароль в
+стоковый PAM этого плагина; неверный пароль — тема играет свой `loginFailed`. Тема не загрузилась — показан стоковый вид;
+**Ctrl+Alt+Enter** на экране блокировки бросает тему со сломанным вводом и показывает стоковое поле пароля.
+
+Темы [qylock](https://github.com/Darkkal44/qylock) (GPL-3.0; арт из игр и видеофоны) в этот репозиторий не входят:
+`omarchy-lock-themes` (в dotfiles, `scripts/bin`) скачивает их в `~/.local/share/omarchy-lock-themes` (sparse-клон) и
+переписывает импорты Qt5 на шимы самого qylock. `list [--remote]`, `fetch <тема>… | --all`, `set <тема>`,
+`preview <тема>`, `update`. В Customizer: **Lock** → SDDM-темы (скачать одну или все, превью, выбор).
+
 ## Файлы
 
 | Файл | |

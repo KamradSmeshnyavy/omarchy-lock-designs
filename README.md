@@ -99,6 +99,21 @@ DesignBase {
 `bg fg accent muted`, `font`, `withAlpha()`, `opt(key, def)` and a `preview` flag. Test it with
 `omarchy-shell lock previewDesign my:Mine.qml`.
 
+## SDDM themes (qylock)
+
+Any SDDM theme written in QML can be the lock screen: the design id `sddm:<theme>` loads `designs/SddmHost.qml`, which
+gives the theme what SDDM would — `sddm` (login, power actions, `loginFailed` / `loginSucceeded`), `config` (from
+`theme.conf`, with `stringValue` / `boolValue` / `intValue`), `userModel`, `sessionModel`, `keyboard`. `sddm.login()`
+only hands the password to the stock PAM flow of this plugin; a wrong password makes the theme play its own
+`loginFailed`. If a theme fails to load, the stock view is shown; **Ctrl+Alt+Enter** on the lock screen drops a theme
+whose input is broken and shows the stock password field.
+
+The themes of [qylock](https://github.com/Darkkal44/qylock) (GPL-3.0; game art and video backgrounds) are not part of
+this repo: `omarchy-lock-themes` (in the dotfiles, `scripts/bin`) downloads them to `~/.local/share/omarchy-lock-themes`
+with a sparse clone and points their Qt5 imports at qylock's own shims. `list [--remote]`, `fetch <theme>… | --all`,
+`set <theme>`, `preview <theme>`, `update`. In the Customizer: **Lock** → SDDM themes (download one or all, previews,
+pick).
+
 ## Files
 
 | File | |

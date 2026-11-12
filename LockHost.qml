@@ -9,7 +9,7 @@ import Quickshell.Io
 //
 // Выбор — ~/.config/omarchy/lock-design.json ({ "design": "<id>", …настройки });
 // реестр — designs/designs.json; свои дизайны — ~/.config/omarchy/lock-designs/<Файл>.qml
-// с id "my:<Файл>.qml". Дизайн не загрузился или в нём нет поля пароля —
+// с id "my:<Файл>.qml"; SDDM-темы (omarchy-lock-themes) — "sddm:<тема>". Дизайн не загрузился или в нём нет поля пароля —
 // показывается стоковый LockView: экран без ввода пароля не остаётся.
 Item {
   id: host
@@ -43,6 +43,8 @@ Item {
   readonly property string designSource: {
     var id = host.designId
     if (id === "classic") return ""
+    // SDDM-тема (qylock и др., omarchy-lock-themes): "sddm:<тема>" — общий мост designs/SddmHost.qml.
+    if (id.indexOf("sddm:") === 0) return "file://" + host.designsDir + "/SddmHost.qml"
     if (id.indexOf("my:") === 0) {
       var name = id.slice(3)
       if (!/^[A-Za-z0-9_. -]+\.qml$/.test(name)) return ""
@@ -116,6 +118,7 @@ Item {
     item.passwordText = Qt.binding(function() { return host.passwordText })
     if ("settings" in item) item.settings = Qt.binding(function() { return host.config })
     if ("preview" in item) item.preview = Qt.binding(function() { return host.preview })
+    if ("sddmTheme" in item) item.sddmTheme = Qt.binding(function() { return host.designId.indexOf("sddm:") === 0 ? host.designId.slice(5) : "" })
     item.submitPassword.connect(function(p) { if (host.activeItem === item) host.submitPassword(p) })
     item.passwordTextEdited.connect(function(p) { if (host.activeItem === item) host.passwordTextEdited(p) })
     item.clearFailureRequested.connect(function() { if (host.activeItem === item) host.clearFailureRequested() })
