@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "KamradSmeshnyavy",
   "license": "GPL-3.0",
-  "description": "Omarchy lock screen with 23 designs on top of the stock PAM flow, with a safe fallback to the stock view",
+  "description": "Omarchy lock screen with 24 designs on top of the stock PAM flow, with a safe fallback to the stock view",
   "omarchy": {
     "capabilities": [
       "authentication"

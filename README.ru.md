@@ -10,12 +10,15 @@
 <!-- Demo video: repo-videos/omarchy-lock-designs.mp4 — drag it here when editing this file on GitHub -->
 
 classic (сток), zen, dock, island, split, sheet, card, cinema, poster, editorial, analog, flip, ring,
-calendar, terminal, neon, system, music, aurora, rain, constellation, dotmatrix, glyph. Цвета и шрифт — из текущей темы
+calendar, terminal, neon, system, music, aurora, rain, constellation, dotmatrix, glyph, liquid. Цвета и шрифт — из текущей темы
 (`dotmatrix` использует фирменную чёрную рамку `#000000`, матричные часы `Doto` Bold, подписи `Space Mono`,
 круглые LED-точки пароля и красный `#d71921` только при ошибке входа). `glyph` — экран блокировки
 [glyph-rice](https://github.com/Nebelung-cloud/glyph-rice) (GPL-3.0): часы Doto на всю ширину, обои собираются из точек
 в виде из `~/.config/omarchy/wallpaper-look.json`, аватар в кольце светодиодов, пилюля пароля из точек с красной кареткой,
-волна по точкам, пока PAM проверяет, и тряска при неверном пароле.
+волна по точкам, пока PAM проверяет, и тряска при неверном пароле. `liquid` — по мотивам экрана блокировки
+[Vitreus](https://github.com/natepayn3/Vitreus): обои расплываются (`liquidBlur`, 0–1), светящиеся часы, стеклянные аватар
+и пилюля пароля, каждый символ — случайная фигура из 16 (их `shapes.svg`, MIT; `"liquidShapes": "dots"` — просто точки),
+красная вспышка и тряска при ошибке.
 
 ## Установка
 

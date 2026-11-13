@@ -10,12 +10,15 @@ PAM and fingerprint are the stock `omarchy.lock` service — only the view is sw
 <!-- Demo video: repo-videos/omarchy-lock-designs.mp4 — drag it here when editing this file on GitHub -->
 
 classic (stock), zen, dock, island, split, sheet, card, cinema, poster, editorial, analog, flip, ring,
-calendar, terminal, neon, system, music, aurora, rain, constellation, dotmatrix, glyph. All of them take their colours and
+calendar, terminal, neon, system, music, aurora, rain, constellation, dotmatrix, glyph, liquid. All of them take their colours and
 font from the active Omarchy theme (`dotmatrix` uses its signature pure `#000000` bezel, `Doto` Bold LED clock,
 `Space Mono` uppercase labels, circular LED password dots and `#d71921` failure state). `glyph` is the lock screen of
 [glyph-rice](https://github.com/Nebelung-cloud/glyph-rice) (GPL-3.0): a full-width Doto clock, the wallpaper assembling
 from dots in the look of `~/.config/omarchy/wallpaper-look.json`, the avatar in an LED ring, a password pill of dots with a
-red caret, a wave over the dots while PAM checks and a shake on a wrong password.
+red caret, a wave over the dots while PAM checks and a shake on a wrong password. `liquid` follows the lock screen of
+[Vitreus](https://github.com/natepayn3/Vitreus): the wallpaper blurs in (`liquidBlur`, 0–1), a glowing clock, a glass avatar
+and password pill, every typed character a random shape of 16 (their `shapes.svg`, MIT; `"liquidShapes": "dots"` — plain
+dots), a red flash and a shake on a wrong password.
 
 ## Install
 

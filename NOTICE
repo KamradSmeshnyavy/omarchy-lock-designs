@@ -17,3 +17,8 @@ Third-party attributions for kamradsmeshnyavy.lock:
   https://github.com/Nebelung-cloud/glyph-rice)
   Copyright (c) Nebelung-cloud
   Licensed under the GNU General Public License v3.0.
+
+- Liquid lock screen design (`designs/Liquid.qml`): own code after the Vitreus lock screen; the 16 character shapes are
+  the paths of `lockscreen/shapes.svg` from Vitreus (https://github.com/natepayn3/Vitreus)
+  Copyright (c) 2026 natepayn3
+  Licensed under the MIT License.
