@@ -1,3 +1,6 @@
+kamradsmeshnyavy.lock is licensed under the GNU General Public License v3.0 (see LICENSE).
+Versions before the glyph design were released under the MIT License.
+
 Third-party attributions for kamradsmeshnyavy.lock:
 
 - Base lock service implementation (`omarchy.lock`):
@@ -8,3 +11,9 @@ Third-party attributions for kamradsmeshnyavy.lock:
   Adapted from Nihil-Shell (`home/hyprlock.nix`, https://github.com/poligle/Nihil-Shell)
   Copyright (c) 2026 Pol Iglesias
   Licensed under the MIT License.
+
+- Glyph lock screen design (`designs/Glyph.qml`, `designs/glyph/`):
+  Adapted from glyph-rice (`lock/LockSurface.qml`, `components/*.qml`, `components/shaders/*.frag`,
+  https://github.com/Nebelung-cloud/glyph-rice)
+  Copyright (c) Nebelung-cloud
+  Licensed under the GNU General Public License v3.0.

@@ -10,9 +10,12 @@ PAM and fingerprint are the stock `omarchy.lock` service — only the view is sw
 <!-- Demo video: repo-videos/omarchy-lock-designs.mp4 — drag it here when editing this file on GitHub -->
 
 classic (stock), zen, dock, island, split, sheet, card, cinema, poster, editorial, analog, flip, ring,
-calendar, terminal, neon, system, music, aurora, rain, constellation, dotmatrix. All of them take their colours and
+calendar, terminal, neon, system, music, aurora, rain, constellation, dotmatrix, glyph. All of them take their colours and
 font from the active Omarchy theme (`dotmatrix` uses its signature pure `#000000` bezel, `Doto` Bold LED clock,
-`Space Mono` uppercase labels, circular LED password dots and `#d71921` failure state).
+`Space Mono` uppercase labels, circular LED password dots and `#d71921` failure state). `glyph` is the lock screen of
+[glyph-rice](https://github.com/Nebelung-cloud/glyph-rice) (GPL-3.0): a full-width Doto clock, the wallpaper assembling
+from dots in the look of `~/.config/omarchy/wallpaper-look.json`, the avatar in an LED ring, a password pill of dots with a
+red caret, a wave over the dots while PAM checks and a shake on a wrong password.
 
 ## Install
 
@@ -146,6 +149,7 @@ style: one `designs/StyleLock.qml` with `look`, tiny wrappers `designs/Style<Loo
 
 ## License
 
-MIT. Based on `omarchy.lock` from [Omarchy](https://github.com/basecamp/omarchy) (MIT, © David Heinemeier
-Hansson). Inspired by [omarchy-lock-explorer](https://github.com/SirJul1337/omarchy-lock-explorer); no
-code from it is used.
+GPL-3.0 (see [LICENSE](LICENSE); earlier versions were MIT), credits — in [NOTICE](NOTICE). Based on `omarchy.lock`
+from [Omarchy](https://github.com/basecamp/omarchy) (MIT, © David Heinemeier Hansson); the `glyph` design comes from
+[glyph-rice](https://github.com/Nebelung-cloud/glyph-rice) (GPL-3.0). Inspired by
+[omarchy-lock-explorer](https://github.com/SirJul1337/omarchy-lock-explorer); no code from it is used.

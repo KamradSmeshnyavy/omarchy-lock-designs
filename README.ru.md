@@ -10,9 +10,12 @@
 <!-- Demo video: repo-videos/omarchy-lock-designs.mp4 — drag it here when editing this file on GitHub -->
 
 classic (сток), zen, dock, island, split, sheet, card, cinema, poster, editorial, analog, flip, ring,
-calendar, terminal, neon, system, music, aurora, rain, constellation, dotmatrix. Цвета и шрифт — из текущей темы
+calendar, terminal, neon, system, music, aurora, rain, constellation, dotmatrix, glyph. Цвета и шрифт — из текущей темы
 (`dotmatrix` использует фирменную чёрную рамку `#000000`, матричные часы `Doto` Bold, подписи `Space Mono`,
-круглые LED-точки пароля и красный `#d71921` только при ошибке входа).
+круглые LED-точки пароля и красный `#d71921` только при ошибке входа). `glyph` — экран блокировки
+[glyph-rice](https://github.com/Nebelung-cloud/glyph-rice) (GPL-3.0): часы Doto на всю ширину, обои собираются из точек
+в виде из `~/.config/omarchy/wallpaper-look.json`, аватар в кольце светодиодов, пилюля пароля из точек с красной кареткой,
+волна по точкам, пока PAM проверяет, и тряска при неверном пароле.
 
 ## Установка
 
@@ -145,6 +148,7 @@ omarchy plugin add https://github.com/KamradSmeshnyavy/omarchy-customizer --enab
 
 ## Лицензия
 
-MIT. Основано на `omarchy.lock` из [Omarchy](https://github.com/basecamp/omarchy) (MIT, © David Heinemeier
-Hansson). Идея — [omarchy-lock-explorer](https://github.com/SirJul1337/omarchy-lock-explorer), код оттуда
-не используется.
+GPL-3.0 (см. [LICENSE](LICENSE); прежние версии — MIT), авторы заимствований — в [NOTICE](NOTICE). Основано на
+`omarchy.lock` из [Omarchy](https://github.com/basecamp/omarchy) (MIT, © David Heinemeier Hansson); дизайн `glyph` — из
+[glyph-rice](https://github.com/Nebelung-cloud/glyph-rice) (GPL-3.0). Идея —
+[omarchy-lock-explorer](https://github.com/SirJul1337/omarchy-lock-explorer), код оттуда не используется.
