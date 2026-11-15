@@ -157,3 +157,4 @@ GPL-3.0 (см. [LICENSE](LICENSE); прежние версии — MIT), авт�
 [omarchy-lock-explorer](https://github.com/SirJul1337/omarchy-lock-explorer), код оттуда не используется.
 
 - **yami** — по мотивам экрана входа yami ([Trendorin/yami](https://github.com/Trendorin/yami), MIT, код свой): крупные пиксельные часы Tiny5 с жёсткой тенью, дата, строка «замок · пользователь», поле пароля в рамке в пиксель с блочным курсором, sleep / reboot / power off, хост и раскладка в ячейках.
+- **Rumda** — по мотивам экрана блокировки Rumda ([hexonide/rumda](https://github.com/hexonide/rumda), только облик, код свой): притемнённые обои, крупное жирное время тёплым акцентом, дата моноширинным шрифтом, маленькое скруглённое поле пароля с курсивным «...password...».

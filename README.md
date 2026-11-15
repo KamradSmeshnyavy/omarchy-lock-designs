@@ -158,3 +158,4 @@ from [Omarchy](https://github.com/basecamp/omarchy) (MIT, © David Heinemeier Ha
 [omarchy-lock-explorer](https://github.com/SirJul1337/omarchy-lock-explorer); no code from it is used.
 
 - **yami** — after yami's login screen ([Trendorin/yami](https://github.com/Trendorin/yami), MIT, own code): a big pixel Tiny5 clock with a hard shadow, the date, a lock · user line, a password box with a one-pixel border and a block cursor, sleep / reboot / power off, the host and keyboard layout in cells.
+- **Rumda** — after Rumda's lock screen ([hexonide/rumda](https://github.com/hexonide/rumda), look only, own code): the wallpaper dimmed, a big bold clock in the warm accent, the date in a monospaced font, a small rounded password box with an italic «...password...».
