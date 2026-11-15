@@ -156,3 +156,5 @@ GPL-3.0 (see [LICENSE](LICENSE); earlier versions were MIT), credits — in [NOT
 from [Omarchy](https://github.com/basecamp/omarchy) (MIT, © David Heinemeier Hansson); the `glyph` design comes from
 [glyph-rice](https://github.com/Nebelung-cloud/glyph-rice) (GPL-3.0). Inspired by
 [omarchy-lock-explorer](https://github.com/SirJul1337/omarchy-lock-explorer); no code from it is used.
+
+- **yami** — after yami's login screen ([Trendorin/yami](https://github.com/Trendorin/yami), MIT, own code): a big pixel Tiny5 clock with a hard shadow, the date, a lock · user line, a password box with a one-pixel border and a block cursor, sleep / reboot / power off, the host and keyboard layout in cells.

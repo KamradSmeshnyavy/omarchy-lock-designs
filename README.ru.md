@@ -155,3 +155,5 @@ GPL-3.0 (см. [LICENSE](LICENSE); прежние версии — MIT), авт�
 `omarchy.lock` из [Omarchy](https://github.com/basecamp/omarchy) (MIT, © David Heinemeier Hansson); дизайн `glyph` — из
 [glyph-rice](https://github.com/Nebelung-cloud/glyph-rice) (GPL-3.0). Идея —
 [omarchy-lock-explorer](https://github.com/SirJul1337/omarchy-lock-explorer), код оттуда не используется.
+
+- **yami** — по мотивам экрана входа yami ([Trendorin/yami](https://github.com/Trendorin/yami), MIT, код свой): крупные пиксельные часы Tiny5 с жёсткой тенью, дата, строка «замок · пользователь», поле пароля в рамке в пиксель с блочным курсором, sleep / reboot / power off, хост и раскладка в ячейках.
