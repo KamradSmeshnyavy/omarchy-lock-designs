@@ -22,3 +22,6 @@ Third-party attributions for kamradsmeshnyavy.lock:
   the paths of `lockscreen/shapes.svg` from Vitreus (https://github.com/natepayn3/Vitreus)
   Copyright (c) 2026 natepayn3
   Licensed under the MIT License.
+
+- designs/Space.qml: after the lock screen of the Space style of elifouts/Dotfiles
+  (https://github.com/elifouts/Dotfiles), GPL-3.0, Copyright (c) Eli Fouts — look only, own code.
