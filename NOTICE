@@ -25,5 +25,6 @@ Third-party attributions for kamradsmeshnyavy.lock:
 
 - designs/Space.qml: after the lock screen of the Space style of elifouts/Dotfiles
   (https://github.com/elifouts/Dotfiles), GPL-3.0, Copyright (c) Eli Fouts — look only, own code.
+- designs/Modern.qml: after the lock screen of the Modern style of elifouts/Dotfiles (GPL-3.0) — look only, own code.
 - designs/Crt.qml: after the lock screen of the Retro style of elifouts/Dotfiles (same source and licence) —
   look only, own code.
